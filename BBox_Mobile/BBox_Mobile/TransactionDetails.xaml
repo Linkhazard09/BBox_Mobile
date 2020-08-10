@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             BackgroundColor="LightBlue"
+             mc:Ignorable="d"
+             x:Class="BBox_Mobile.TransactionDetails">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView >
+            <StackLayout>
+            <Label FontSize="Large" Text="Transaction Records"></Label>
+            <Editor x:Name="Receipt_Editor" IsReadOnly="True" BackgroundColor="White" Text="" AutoSize="TextChanges" MaxLength="550"></Editor>
+                <Button x:Name="Refresh_Button" Text="Refresh" Clicked="Refresh_Button_Clicked"></Button>
+                    <Label Text="Amount Purchased by Item Type"></Label>
+                    <microcharts:ChartView x:Name="MyChart" HeightRequest="250">
+                    </microcharts:ChartView>
+
+                </StackLayout>
+        </ScrollView>
+
+       
+
+             
+            
+
+
+        </StackLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </ContentPage.Content>
+</ContentPage>

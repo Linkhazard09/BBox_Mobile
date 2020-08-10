@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="LightBlue"
+             x:Class="BBox_Mobile.MainPage">
+    <StackLayout x:Name="MasterLayout">
+
+
+
+
+       
+        <StackLayout Padding="0,50" x:Name="LogoStacks" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" >
+
+            <Image Source="LogoMaker"></Image>
+            <Label Text="Your Bakery Management Application" HorizontalOptions="CenterAndExpand" TextColor="WhiteSmoke" FontSize="Large"></Label>
+           
+
+
+
+
+
+        </StackLayout>
+
+        <StackLayout x:Name="LogingStacks" VerticalOptions="StartAndExpand" Padding="40,0,40,0" >
+
+            
+                <Label TextColor="White" x:Name="Lbl_Username" Text="Username"></Label>
+            <Entry x:Name="EntryUsername" Placeholder="Username"></Entry>
+            <Label x:Name="Lbl_Password" TextColor="White" Text="Password"></Label>
+            <Entry x:Name="EntryPassword" Placeholder="Password" IsPassword="True"></Entry>
+            <Button x:Name="LoginButton" Text="Login" Clicked="LoginButton_Clicked"></Button>
+        </StackLayout>
+
+
+
+
+
+
+    </StackLayout>
+
+
+</ContentPage>
